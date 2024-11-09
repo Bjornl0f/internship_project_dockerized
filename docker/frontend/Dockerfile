@@ -1,12 +1,10 @@
-FROM node:22.11.0
+FROM node:14.17.4
 
 WORKDIR /app
 
-COPY frontend/package*.json ./
+COPY frontend /app
 
 RUN npm install
-
-COPY frontend/ .
 
 EXPOSE 3000
 
