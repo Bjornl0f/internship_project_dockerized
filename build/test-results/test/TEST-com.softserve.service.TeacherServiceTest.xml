@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.softserve.service.TeacherServiceTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2024-11-11T15:57:48" hostname="DESKTOP-MFEATBC" time="0.457">
+  <properties/>
+  <testcase name="getDisabled" classname="com.softserve.service.TeacherServiceTest" time="0.072"/>
+  <testcase name="delete" classname="com.softserve.service.TeacherServiceTest" time="0.012"/>
+  <testcase name="getAll" classname="com.softserve.service.TeacherServiceTest" time="0.005"/>
+  <testcase name="throwEntityNotFoundExceptionIfTeacherNotFoundedById" classname="com.softserve.service.TeacherServiceTest" time="0.005"/>
+  <testcase name="saveTeacher" classname="com.softserve.service.TeacherServiceTest" time="0.013"/>
+  <testcase name="getTeachersWithoutUsers" classname="com.softserve.service.TeacherServiceTest" time="0.009"/>
+  <testcase name="joinTeacherWithUserIfUserIdFromTeacherIsNullAndUserRoleFromUserIsNotTeacher" classname="com.softserve.service.TeacherServiceTest" time="0.063"/>
+  <testcase name="getById" classname="com.softserve.service.TeacherServiceTest" time="0.014"/>
+  <testcase name="throwEntityNotFoundExceptionIfTeacherNotFoundedByUserId" classname="com.softserve.service.TeacherServiceTest" time="0.014"/>
+  <testcase name="[0] null (updateDTOIfEmailNotExist)" classname="com.softserve.service.TeacherServiceTest" time="0.012"/>
+  <testcase name="[1]  (updateDTOIfEmailNotExist)" classname="com.softserve.service.TeacherServiceTest" time="0.009"/>
+  <testcase name="[0] null (saveDTOIfEmailNotExist)" classname="com.softserve.service.TeacherServiceTest" time="0.016"/>
+  <testcase name="[1]  (saveDTOIfEmailNotExist)" classname="com.softserve.service.TeacherServiceTest" time="0.019"/>
+  <testcase name="throwEntityAlreadyExistsExceptionIfUserIdFromTeacherAlreadyExists" classname="com.softserve.service.TeacherServiceTest" time="0.015"/>
+  <testcase name="throwEntityAlreadyExistsExceptionIfUserRoleFromUserIsTeacher" classname="com.softserve.service.TeacherServiceTest" time="0.016"/>
+  <testcase name="saveDTOIfEmailExists" classname="com.softserve.service.TeacherServiceTest" time="0.038"/>
+  <testcase name="getTeacherByUserId" classname="com.softserve.service.TeacherServiceTest" time="0.005"/>
+  <testcase name="updateDTOIfEmailExistsAndUserIdNotExist" classname="com.softserve.service.TeacherServiceTest" time="0.025"/>
+  <testcase name="updateDTOIfEmailAndUserIdExist" classname="com.softserve.service.TeacherServiceTest" time="0.062"/>
+  <system-out><![CDATA[[INFO ] 2024-11-11 17:57:48.980 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into getAll of getDisabled
+[INFO ] 2024-11-11 17:57:48.980 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into delete method with entity:Teacher(id=1, name=Name1, surname=Surname1, patronymic=Patronymic1, position=Position1, userId=null, department=null, disable=false)
+[INFO ] 2024-11-11 17:57:48.995 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into getAll()
+[INFO ] 2024-11-11 17:57:48.995 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into getById of TeacherServiceImpl with id 1
+[INFO ] 2024-11-11 17:57:49.011 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into save method with entity:Teacher(id=1, name=Name1, surname=Surname1, patronymic=Patronymic1, position=Position1, userId=null, department=null, disable=false)
+[INFO ] 2024-11-11 17:57:49.026 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into getAllTeacherWithoutUser of TeacherServiceImpl
+[INFO ] 2024-11-11 17:57:49.033 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into joinTeacherWithUser method with teacherId 1 and userId:1
+[INFO ] 2024-11-11 17:57:49.033 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into getById of TeacherServiceImpl with id 1
+[INFO ] 2024-11-11 17:57:49.033 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into update method with entity:Teacher(id=1, name=Ivan, surname=Ivanov, patronymic=Ivanovych, position=docent, userId=1, department=null, disable=false)
+[INFO ] 2024-11-11 17:57:49.096 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into getById of TeacherServiceImpl with id 1
+[INFO ] 2024-11-11 17:57:49.111 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into getByUserId with userId 1
+[INFO ] 2024-11-11 17:57:49.149 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into update method with dto:com.softserve.dto.TeacherForUpdateDTO@772a370d
+[INFO ] 2024-11-11 17:57:49.149 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into update method with entity:Teacher(id=1, name=Name1, surname=Surname1, patronymic=Patronymic1, position=Position1, userId=1, department=null, disable=false)
+[INFO ] 2024-11-11 17:57:49.149 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into update method with dto:com.softserve.dto.TeacherForUpdateDTO@ef64a8f
+[INFO ] 2024-11-11 17:57:49.149 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into update method with entity:Teacher(id=1, name=Name1, surname=Surname1, patronymic=Patronymic1, position=Position1, userId=1, department=null, disable=false)
+[INFO ] 2024-11-11 17:57:49.177 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into save method with dto:com.softserve.dto.TeacherDTO@7ec53f8f
+[INFO ] 2024-11-11 17:57:49.178 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into save method with entity:Teacher(id=1, name=Name1, surname=Surname1, patronymic=Patronymic1, position=Position1, userId=null, department=null, disable=false)
+[INFO ] 2024-11-11 17:57:49.179 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into save method with dto:com.softserve.dto.TeacherDTO@1b74dd88
+[INFO ] 2024-11-11 17:57:49.179 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into save method with entity:Teacher(id=1, name=Name1, surname=Surname1, patronymic=Patronymic1, position=Position1, userId=null, department=null, disable=false)
+[INFO ] 2024-11-11 17:57:49.212 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into joinTeacherWithUser method with teacherId 1 and userId:1
+[INFO ] 2024-11-11 17:57:49.212 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into getById of TeacherServiceImpl with id 1
+[INFO ] 2024-11-11 17:57:49.233 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into joinTeacherWithUser method with teacherId 1 and userId:1
+[INFO ] 2024-11-11 17:57:49.233 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into getById of TeacherServiceImpl with id 1
+[INFO ] 2024-11-11 17:57:49.249 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into save method with dto:com.softserve.dto.TeacherDTO@158566f8
+[INFO ] 2024-11-11 17:57:49.249 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into registerTeacher method with teacher Teacher(id=null, name=Name1, surname=Surname1, patronymic=Patronymic1, position=Position1, userId=null, department=null, disable=false) and email:teacher@gmail.com
+[INFO ] 2024-11-11 17:57:49.265 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into save method with entity:Teacher(id=null, name=Name1, surname=Surname1, patronymic=Patronymic1, position=Position1, userId=1, department=null, disable=false)
+[INFO ] 2024-11-11 17:57:49.281 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into getByUserId with userId 1
+[INFO ] 2024-11-11 17:57:49.282 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into update method with dto:com.softserve.dto.TeacherForUpdateDTO@2c4da654
+[INFO ] 2024-11-11 17:57:49.282 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into getById of TeacherServiceImpl with id 1
+[INFO ] 2024-11-11 17:57:49.282 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into registerTeacher method with teacher Teacher(id=1, name=Name1, surname=Surname1, patronymic=Patronymic1, position=Position1, userId=null, department=null, disable=false) and email:teacher@gmail.com
+[INFO ] 2024-11-11 17:57:49.282 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into update method with entity:Teacher(id=1, name=Name1, surname=Surname1, patronymic=Patronymic1, position=Position1, userId=1, department=null, disable=false)
+[INFO ] 2024-11-11 17:57:49.334 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into update method with dto:com.softserve.dto.TeacherForUpdateDTO@6465f4a
+[INFO ] 2024-11-11 17:57:49.334 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into getById of TeacherServiceImpl with id 1
+[INFO ] 2024-11-11 17:57:49.334 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into updateEmailInUserForTeacher method with email teacher@gmail.com and userId:1
+[INFO ] 2024-11-11 17:57:49.334 [Test worker] c.s.s.i.TeacherServiceImpl - Enter into update method with entity:Teacher(id=1, name=Name1, surname=Surname1, patronymic=Patronymic1, position=Position1, userId=1, department=null, disable=false)
+]]></system-out>
+  <system-err><![CDATA[java.lang.instrument.IllegalClassFormatException: Error while instrumenting com/softserve/service/TeacherServiceTest.
+	at org.jacoco.agent.rt.internal_3570298.CoverageTransformer.transform(CoverageTransformer.java:94)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:244)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:541)
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:495)
+	at java.base/java.lang.Class.forName(Class.java:474)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:66)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:54)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:53)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy2/jdk.proxy2.$Proxy6.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:183)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: java.io.IOException: Error while instrumenting com/softserve/service/TeacherServiceTest.
+	at org.jacoco.agent.rt.internal_3570298.core.instr.Instrumenter.instrumentError(Instrumenter.java:160)
+	at org.jacoco.agent.rt.internal_3570298.core.instr.Instrumenter.instrument(Instrumenter.java:110)
+	at org.jacoco.agent.rt.internal_3570298.CoverageTransformer.transform(CoverageTransformer.java:92)
+	... 36 more
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 63
+	at org.jacoco.agent.rt.internal_3570298.asm.ClassReader.<init>(ClassReader.java:196)
+	at org.jacoco.agent.rt.internal_3570298.asm.ClassReader.<init>(ClassReader.java:177)
+	at org.jacoco.agent.rt.internal_3570298.asm.ClassReader.<init>(ClassReader.java:163)
+	at org.jacoco.agent.rt.internal_3570298.core.internal.instr.InstrSupport.classReaderFor(InstrSupport.java:280)
+	at org.jacoco.agent.rt.internal_3570298.core.instr.Instrumenter.instrument(Instrumenter.java:76)
+	at org.jacoco.agent.rt.internal_3570298.core.instr.Instrumenter.instrument(Instrumenter.java:108)
+	... 37 more
+java.lang.instrument.IllegalClassFormatException: Error while instrumenting com/softserve/repository/TeacherRepository.
+	at org.jacoco.agent.rt.internal_3570298.CoverageTransformer.transform(CoverageTransformer.java:94)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:244)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:541)
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3353)
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2424)
+	at org.junit.runners.model.TestClass.getSortedDeclaredFields(TestClass.java:77)
+	at org.junit.runners.model.TestClass.scanAnnotatedMembers(TestClass.java:70)
+	at org.junit.runners.model.TestClass.<init>(TestClass.java:57)
+	at org.junit.runners.ParentRunner.createTestClass(ParentRunner.java:111)
+	at org.junit.runners.ParentRunner.<init>(ParentRunner.java:91)
+	at org.junit.runners.BlockJUnit4ClassRunner.<init>(BlockJUnit4ClassRunner.java:74)
+	at junitparams.JUnitParamsRunner.<init>(JUnitParamsRunner.java:393)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:37)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
+	at org.junit.internal.requests.ClassRequest.createRunner(ClassRequest.java:28)
+	at org.junit.internal.requests.MemoizingRequest.getRunner(MemoizingRequest.java:19)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:77)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:54)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:53)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy2/jdk.proxy2.$Proxy6.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:183)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: java.io.IOException: Error while instrumenting com/softserve/repository/TeacherRepository.
+	at org.jacoco.agent.rt.internal_3570298.core.instr.Instrumenter.instrumentError(Instrumenter.java:160)
+	at org.jacoco.agent.rt.internal_3570298.core.instr.Instrumenter.instrument(Instrumenter.java:110)
+	at org.jacoco.agent.rt.internal_3570298.CoverageTransformer.transform(CoverageTransformer.java:92)
+	... 53 more
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 63
+	at org.jacoco.agent.rt.internal_3570298.asm.ClassReader.<init>(ClassReader.java:196)
+	at org.jacoco.agent.rt.internal_3570298.asm.ClassReader.<init>(ClassReader.java:177)
+	at org.jacoco.agent.rt.internal_3570298.asm.ClassReader.<init>(ClassReader.java:163)
+	at org.jacoco.agent.rt.internal_3570298.core.internal.instr.InstrSupport.classReaderFor(InstrSupport.java:280)
+	at org.jacoco.agent.rt.internal_3570298.core.instr.Instrumenter.instrument(Instrumenter.java:76)
+	at org.jacoco.agent.rt.internal_3570298.core.instr.Instrumenter.instrument(Instrumenter.java:108)
+	... 54 more
+java.lang.instrument.IllegalClassFormatException: Error while instrumenting com/softserve/service/impl/TeacherServiceImpl.
+	at org.jacoco.agent.rt.internal_3570298.CoverageTransformer.transform(CoverageTransformer.java:94)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:244)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:541)
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3353)
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2424)
+	at org.junit.runners.model.TestClass.getSortedDeclaredFields(TestClass.java:77)
+	at org.junit.runners.model.TestClass.scanAnnotatedMembers(TestClass.java:70)
+	at org.junit.runners.model.TestClass.<init>(TestClass.java:57)
+	at org.junit.runners.ParentRunner.createTestClass(ParentRunner.java:111)
+	at org.junit.runners.ParentRunner.<init>(ParentRunner.java:91)
+	at org.junit.runners.BlockJUnit4ClassRunner.<init>(BlockJUnit4ClassRunner.java:74)
+	at junitparams.JUnitParamsRunner.<init>(JUnitParamsRunner.java:393)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:37)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
+	at org.junit.internal.requests.ClassRequest.createRunner(ClassRequest.java:28)
+	at org.junit.internal.requests.MemoizingRequest.getRunner(MemoizingRequest.java:19)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:77)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:54)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:53)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy2/jdk.proxy2.$Proxy6.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:183)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: java.io.IOException: Error while instrumenting com/softserve/service/impl/TeacherServiceImpl.
+	at org.jacoco.agent.rt.internal_3570298.core.instr.Instrumenter.instrumentError(Instrumenter.java:160)
+	at org.jacoco.agent.rt.internal_3570298.core.instr.Instrumenter.instrument(Instrumenter.java:110)
+	at org.jacoco.agent.rt.internal_3570298.CoverageTransformer.transform(CoverageTransformer.java:92)
+	... 53 more
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 63
+	at org.jacoco.agent.rt.internal_3570298.asm.ClassReader.<init>(ClassReader.java:196)
+	at org.jacoco.agent.rt.internal_3570298.asm.ClassReader.<init>(ClassReader.java:177)
+	at org.jacoco.agent.rt.internal_3570298.asm.ClassReader.<init>(ClassReader.java:163)
+	at org.jacoco.agent.rt.internal_3570298.core.internal.instr.InstrSupport.classReaderFor(InstrSupport.java:280)
+	at org.jacoco.agent.rt.internal_3570298.core.instr.Instrumenter.instrument(Instrumenter.java:76)
+	at org.jacoco.agent.rt.internal_3570298.core.instr.Instrumenter.instrument(Instrumenter.java:108)
+	... 54 more
+]]></system-err>
+</testsuite>
